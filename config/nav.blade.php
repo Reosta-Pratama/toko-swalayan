@@ -199,14 +199,14 @@ return [
                 'href' => '/purchase-report',
             ],
             [
-                'name' => 'inventory Report',
-                'route' => 'report.inventory',
-                'href' => '/inventory-report',
-            ],
-            [
                 'name' => 'invoice Report',
                 'route' => 'report.invoice',
                 'href' => '/invoice-report',
+            ],
+            [
+                'name' => 'inventory Report',
+                'route' => 'report.inventory',
+                'href' => '/inventory-report',
             ],
             [
                 'name' => 'supplier Report',

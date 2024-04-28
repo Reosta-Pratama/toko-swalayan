@@ -70,7 +70,48 @@
 @elseif ($subItem['route'] === "warehouse.list")
     <x-iconsax-bul-shop />
 
+@elseif ($subItem['route'] === "employee.list")
+    <x-iconsax-bul-personalcard />
 
+@elseif ($subItem['route'] === "employee.designation")
+    <x-iconsax-bul-hierarchy />
 
+@elseif ($subItem['route'] === "employee.shift")
+    <x-iconsax-bul-shuffle />
 
+@elseif ($subItem['route'] === "employee.payroll")
+    <x-iconsax-bul-money-send />
+
+@elseif ($subItem['route'] === "report.sales")
+    <x-iconsax-bul-chart-21 />
+
+@elseif ($subItem['route'] === "report.purchase")
+    <x-iconsax-bul-chart-3 />
+
+@elseif ($subItem['route'] === "report.inventory")
+    <x-iconsax-bul-driver />
+
+@elseif ($subItem['route'] === "report.invoice")
+    <x-iconsax-bul-document-text />
+
+@elseif ($subItem['route'] === "report.supplier")
+    <x-iconsax-bul-people />
+
+@elseif ($subItem['route'] === "report.customer")
+    <x-iconsax-bul-user />
+
+@elseif ($subItem['route'] === "report.expense")
+    <x-iconsax-bul-document-copy />
+
+@elseif ($subItem['route'] === "report.income")
+    <x-iconsax-bul-chart-1 />
+
+@elseif ($subItem['route'] === "report.profitLoss")
+    <x-iconsax-bul-chart-square />
+
+@elseif ($subItem['route'] === "user.list")
+    <x-iconsax-bul-user-square />
+
+@elseif ($subItem['route'] === "user.role")
+    <x-iconsax-bul-shield />   
 @endif

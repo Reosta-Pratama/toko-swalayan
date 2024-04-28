@@ -18,10 +18,10 @@
                                 @include('sections.aside.icon')
                             </span>
 
-                            <div class="flex flex-1 capitalize
+                            <span class="flex flex-1 capitalize
                                 text-[14px] text-grayPOS-1">
                                 {{ $subItem['name'] }}
-                            </div>
+                            </span>
                         </a>
                     @endforeach
                 </li>
