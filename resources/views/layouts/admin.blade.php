@@ -11,8 +11,16 @@
         {{-- Tailwind --}}
         @vite('resources/css/app.css')
 
+        {{-- Css --}}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
     </head>
-    <body>
-        <p>test</p>
+    <body class="bg-grayPOS-2 font-interPOS">
+        @include('partials.aside')
+
+        {{-- Add Script --}}
+        @stack('scripts')
     </body>
 </html>
