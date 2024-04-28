@@ -15,7 +15,8 @@ export default {
                 'grayPOS-5': '#e7eaee',
                 'orangePOS-1': '#e58a00',
                 'greenPOS-1': '#2ca87f',
-                'redPOS-1': '#dc2626'
+                'redPOS-1': '#dc2626',
+                'iconPOS': '#3e4853',
             },
             fontFamily: {
                 'interPOS': ['Inter var', 'sans-serif']

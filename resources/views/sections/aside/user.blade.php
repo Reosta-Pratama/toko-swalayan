@@ -1,4 +1,4 @@
-<div class="bg-grayPOS-4 mx-3
+<div class="bg-grayPOS-4 mx-[10px]
     border border-solid border-grayPOS-5 rounded-xl">
     <div class="p-5">
         <div class="flex items-center gap-4">

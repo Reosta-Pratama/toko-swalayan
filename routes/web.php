@@ -6,10 +6,10 @@ Route::get('/', function () {
     return view('pages.dashboard');
 })->name("dashboard");
 
-Route::get('/products-list', function () {
+Route::get('/list-product', function () {
     return view('pages.dashboard');
 })->name("product");
 
-Route::get('/add-products', function () {
+Route::get('/add-product', function () {
     return view('pages.dashboard');
 })->name("product.add");

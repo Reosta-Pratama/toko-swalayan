@@ -10,13 +10,11 @@
         </div>
 
         <div class="h-[calc(100vh-74px)] flex flex-col gap-4">
+            {{-- Information Person --}}
             @include('sections.aside.user')
 
-            <ul>
-                <li>
-                    <a href=""></a>
-                </li>
-            </ul>
+            {{-- List Nav --}}
+            @include('sections.aside.nav')
         </div>
     </div>
 </aside>
