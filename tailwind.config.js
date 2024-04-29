@@ -26,6 +26,7 @@ export default {
                 'width': 'width',
                 'height': 'height',
                 'left': 'left',
+                'margin-left': 'margin-left',
             }
         }
     },

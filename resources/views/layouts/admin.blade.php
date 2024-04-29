@@ -24,6 +24,14 @@
         {{-- Header --}}
         @include('partials.header')
 
+        {{-- Main --}}
+        <main class="relative top-[74px] ml-[280px]
+            transition-margin-left duration-200 ease-linear">
+            <div class="px-10 py-5">
+                {{ $slot }}
+            </div>
+        </main>
+
         {{-- Add Script --}}
         @stack('scripts')
     </body>
