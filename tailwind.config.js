@@ -7,6 +7,7 @@ export default {
         extend: {
             colors: {
                 'blackPOS-1': '#1d2630',
+                'blackPOS-2': '#131920',
                 'bluePOS-1': '#4680ff',
                 'grayPOS-1': '#5b6b79',
                 'grayPOS-2': '#f8f9fa',

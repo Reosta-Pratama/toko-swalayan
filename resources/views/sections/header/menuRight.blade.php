@@ -14,7 +14,7 @@
                 </span>
             </a>
         </li>
-        
+
         <li>
             <x-button.menu-btn
                 id="themeBtn"
@@ -23,6 +23,23 @@
                 :addClass="null"
                 icon="{{ svg('iconsax-bul-sun-1') }}">
             </x-button.menu-btn>
+        </li>
+
+        <li>
+            <button 
+                id="profileBtn"
+                type="button"
+                class="group flex justify-center items-center rounded-full">
+                    <div class="w-10 h-10
+                        transition-all duration-300 ease-in-out
+                        group-hover:scale-105">
+                        <img src="{{ asset('assets/img/dummy/avatar-1.jpg') }}" 
+                            alt="avatar" 
+                            loading="lazy"
+                            class="w-full h-full rounded-full object-cover object-center">
+                    </div>
+            </button>
+
         </li>
     </ul>
 </div>
