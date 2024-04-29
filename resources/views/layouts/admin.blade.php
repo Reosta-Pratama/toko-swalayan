@@ -18,7 +18,11 @@
 
     </head>
     <body class="bg-grayPOS-2 font-interPOS">
+        {{-- Aside --}}
         @include('partials.aside')
+
+        {{-- Header --}}
+        @include('partials.header')
 
         {{-- Add Script --}}
         @stack('scripts')
