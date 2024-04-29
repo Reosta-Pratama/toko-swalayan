@@ -5,7 +5,7 @@
         <div class="h-[74px] flex items-center px-6 py-4">
             <a href="{{ route('dashboard') }}"
                 class="text-bluePOS-1 text-2xl font-semibold capitalize">
-                Warung
+                <h1>warung</h1>
             </a>
         </div>
 

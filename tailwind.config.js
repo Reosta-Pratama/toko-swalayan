@@ -9,6 +9,8 @@ export default {
                 'blackPOS-1': '#1d2630',
                 'blackPOS-2': '#131920',
                 'bluePOS-1': '#4680ff',
+                'bluePOS-2': '#3c6dd9',
+                'bluePOS-3': '#3866cc',
                 'grayPOS-1': '#5b6b79',
                 'grayPOS-2': '#f8f9fa',
                 'grayPOS-3': '#bec8d0',
