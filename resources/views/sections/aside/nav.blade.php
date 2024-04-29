@@ -13,13 +13,18 @@
                                 duration-300 ease-linear hover:bg-grayPOS-1/10
                                 @if((Request::path() === '/' && Request::path() == ltrim($subItem['href'], '')) || (Request::path() == ltrim($subItem['href'], '/')))
                                     bg-bluePOS-1/10
+                                @endif
+                                
+                                @if((Request::path() === '/' && Request::path() == ltrim($subItem['href'], '')) || (Request::path() == ltrim($subItem['href'], '/')))
+                                    text-bluePOS-1
+                                @else
+                                    text-grayPOS-1
                                 @endif">
-                            <span class="w-6 h-6 text-grayPOS-1">
+                            <span class="w-6 h-6">
                                 @include('sections.aside.icon')
                             </span>
 
-                            <span class="flex flex-1 capitalize
-                                text-[14px] text-grayPOS-1">
+                            <span class="flex flex-1 capitalize text-[14px]">
                                 {{ $subItem['name'] }}
                             </span>
                         </a>

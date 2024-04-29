@@ -10,7 +10,7 @@
             </div>
 
             <div class="flex flex-col capitalize">
-                <h2 class="text-sm">reosta pratama</h2>
+                <h2 class="text-sm font-semibold">reosta pratama</h2>
                 <small class="text-[80%]">super admin</small>
             </div>
         </div>
