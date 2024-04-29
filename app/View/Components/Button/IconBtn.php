@@ -11,18 +11,18 @@ class IconBtn extends Component
 {
     public $id;
     public $name;
-    public $type;
+    public $href;
     public $onclick;
     public $addClass;
     public $icon;
     /**
      * Create a new component instance.
      */
-    public function __construct($id, $name, $type = 'button', $onclick = null, $addClass = null, $icon)
+    public function __construct($id, $name, $href, $onclick = null, $addClass = null, $icon)
     {
         $this->id = $id;
         $this->name = $name;
-        $this->type = in_array($type, ['button', 'menu', 'reset', 'submit']) ? $type : 'button';
+        $this->href = $href;
         $this->onclick = $onclick;
         $this->addClass = $addClass;
         $this->icon = new HtmlString($icon);

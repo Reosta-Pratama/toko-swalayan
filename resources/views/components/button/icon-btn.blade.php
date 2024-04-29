@@ -1,7 +1,10 @@
 <div class="relative">
-    <button 
+    <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+    <a 
         id="{{ $id }}"
-        type="{{ $type }}"
+        href=""
+        target="_blank"
+        rel="noopener noreferrer"
         @if ($onclick != null)
             onclick="{{ $onclick }}"
         @endif
@@ -10,10 +13,10 @@
         class="w-11 h-11 
             flex justify-center items-center rounded-lg 
             border border-solid border-grayPOS-1/20 {{ $addClass ?? '' }}">
-        <span class="w-6 h-6">
+        <span class="w-6 h-6 text-grayPOS-1">
             {{ $icon }}
         </span>
-    </button>
+    </a>
 
     <x-tooltip.tooltip
         id="{{ $id }}Tooltip"
@@ -22,16 +25,4 @@
     </x-tooltip.tooltip>
 </div>
 
-<script>
-    function showTooltip(id) {
-        var tooltip = document.getElementById(id);
-        tooltip.classList.remove('opacity-0', 'invisible');
-        tooltip.classList.add('opacity-100', 'visible');
-    }
 
-    function hideTooltip(id) {
-        var tooltip = document.getElementById(id);
-        tooltip.classList.remove('opacity-100', 'visible');
-        tooltip.classList.add('opacity-0', 'invisible');
-    }
-</script>

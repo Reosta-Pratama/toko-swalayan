@@ -28,20 +28,12 @@
                     name="add product"
                 />
 
-                <ul class="flex items-center gap-2">
-                    <li>
-                        <x-button.icon-btn
-                            id="pdfBtn"
-                            name="PDF"
-                            type="button"
-                            :onclick="null"
-                            :addClass="null"
-                            icon='<img src="{{ asset("assets/img/icon/pdf.png") }}" alt="pdfBtn">'>
-                        </x-button.icon-btn>
-                    </li>
-                </ul>
+                {{-- Print Data --}}
+                @include('sections.productList.print')
             </x-list.card-header>   
         </x-list.card>
 
     </div>
+
+    <script src="{{ asset('assets/js/tooltip.js') }}"></script>
 </x-layout.admin>
