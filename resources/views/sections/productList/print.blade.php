@@ -4,7 +4,9 @@
             id="pdfBtn"
             name="PDF"
             href="/"
-            :addClass="null"
+            addClass="border-grayPOS-1/20"
+            textColor="text-grayPOS-1"
+            :target="false"
             icon='<img src="{{ asset("assets/img/icon/pdf.png") }}" alt="pdfBtn" class="w-full h-full object-contain">'>
         </x-button.icon-btn>
     </li>
@@ -14,7 +16,9 @@
             id="excelBtn"
             name="Excel"
             href="/"
-            :addClass="null"
+            addClass="border-grayPOS-1/20"
+            textColor="text-grayPOS-1"
+            :target="false"
             icon='<img src="{{ asset("assets/img/icon/xls.png") }}" alt="excelBtn" class="w-full h-full object-contain">'>
         </x-button.icon-btn>
     </li>
@@ -24,7 +28,9 @@
             id="printBtn"
             name="print"
             href="/"
-            :addClass="null"
+            addClass="border-grayPOS-1/20"
+            textColor="text-grayPOS-1"
+            :target="false"
             icon="{{ svg('iconsax-bul-printer') }}">
         </x-button.icon-btn>
     </li>
@@ -34,7 +40,9 @@
             id="refreshBtn"
             name="refresh"
             href="/"
-            :addClass="null"
+            addClass="border-grayPOS-1/20"
+            textColor="text-grayPOS-1"
+            :target="false"
             icon="{{ svg('iconsax-bul-rotate-left-1') }}">
         </x-button.icon-btn>
     </li>

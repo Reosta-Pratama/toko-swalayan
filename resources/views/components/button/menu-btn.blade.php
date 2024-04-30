@@ -1,9 +1,6 @@
 <button 
     id="{{ $id }}"
     type="{{ $type }}"
-    @if ($onclick != null)
-        onclick="{{ $onclick }}"
-    @endif
     class="group w-11 h-11 
         flex justify-center items-center rounded-lg
         transition duration-300 ease-linear

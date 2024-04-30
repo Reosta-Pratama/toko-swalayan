@@ -14,16 +14,20 @@ class IconBtn extends Component
     public $href;
     public $addClass;
     public $icon;
+    public $target;
+    public $textColor;
     /**
      * Create a new component instance.
      */
-    public function __construct($id, $name, $href, $addClass = null, $icon)
+    public function __construct($id, $name, $href, $addClass=null, $icon, $target=false, $textColor)
     {
         $this->id = $id;
         $this->name = $name;
         $this->href = $href;
         $this->addClass = $addClass;
         $this->icon = new HtmlString($icon);
+        $this->target = $target;
+        $this->textColor = $textColor;
     }
 
     /**

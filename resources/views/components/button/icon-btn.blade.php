@@ -3,17 +3,16 @@
     <a 
         id="{{ $id }}"
         href="{{ $href }}"
-        target="_blank"
-        rel="noopener noreferrer"
-        @if ($onclick != null)
-            onclick="{{ $onclick }}"
+        @if ($target)
+            target="_blank"
+            rel="noopener noreferrer"
         @endif
         onmouseenter="showTooltip('{{ $id }}Tooltip')"
         onmouseleave="hideTooltip('{{ $id }}Tooltip')"
         class="w-11 h-11 
             flex justify-center items-center rounded-lg 
-            border border-solid border-grayPOS-1/20 {{ $addClass ?? '' }}">
-        <span class="w-6 h-6 text-grayPOS-1">
+            border border-solid {{ $addClass ?? '' }}">
+        <span class="w-6 h-6 {{ $textColor }}">
             {{ $icon }}
         </span>
     </a>
