@@ -11,17 +11,15 @@ class menuBtn extends Component
 {
     public $id;
     public $type;
-    public $onclick;
     public $addClass;
     public $icon;
     /**
      * Create a new component instance.
      */
-    public function __construct($id, $type = 'button', $onclick = null, $addClass = null, $icon)
+    public function __construct($id, $type = 'button', $addClass = null, $icon)
     {
         $this->id = $id;
         $this->type = in_array($type, ['button', 'menu', 'reset', 'submit']) ? $type : 'button';
-        $this->onclick = $onclick;
         $this->addClass = $addClass;
         $this->icon = new HtmlString($icon);
     }

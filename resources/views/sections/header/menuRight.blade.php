@@ -25,7 +25,6 @@
             <x-button.menu-btn
                 id="themeBtn"
                 type="button"
-                :onclick="null"
                 :addClass="null"
                 icon="{{ svg('iconsax-bul-sun-1') }}">
             </x-button.menu-btn>

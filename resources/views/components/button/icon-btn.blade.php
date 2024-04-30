@@ -2,7 +2,7 @@
     <a href="http://" target="_blank" rel="noopener noreferrer"></a>
     <a 
         id="{{ $id }}"
-        href=""
+        href="{{ $href }}"
         target="_blank"
         rel="noopener noreferrer"
         @if ($onclick != null)

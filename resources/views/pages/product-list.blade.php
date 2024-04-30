@@ -31,6 +31,15 @@
                 {{-- Print Data --}}
                 @include('sections.productList.print')
             </x-list.card-header>   
+
+            {{-- Filtering, Sorting, Searching --}}
+            <x-container.form-search
+                action="">
+                @include('sections.productList.search')
+            </x-container.form-search>
+
+            {{-- Table --}}
+            
         </x-list.card>
 
     </div>

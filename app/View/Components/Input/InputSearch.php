@@ -1,29 +1,31 @@
 <?php
 
-namespace App\View\Components\Button;
+namespace App\View\Components\Input;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
-use Illuminate\Support\HtmlString;
 
-class IconBtn extends Component
+class InputSearch extends Component
 {
     public $id;
     public $name;
-    public $href;
+    public $placeholder;
     public $addClass;
-    public $icon;
+    public $required;
+    public $autocomplete;
     /**
      * Create a new component instance.
      */
-    public function __construct($id, $name, $href, $addClass = null, $icon)
+    public function __construct($id, $name, $placeholder, $addClass=null, $required=false, $autocomplete=false)
     {
+        //
         $this->id = $id;
         $this->name = $name;
-        $this->href = $href;
+        $this->placeholder = $placeholder;
         $this->addClass = $addClass;
-        $this->icon = new HtmlString($icon);
+        $this->required = $required;
+        $this->autocomplete = $autocomplete;
     }
 
     /**
@@ -31,6 +33,6 @@ class IconBtn extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.button.icon-btn');
+        return view('components.input.input-search');
     }
 }
