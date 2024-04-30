@@ -26,12 +26,13 @@
                 id="sortBtn"
                 name="sorting"
                 :required="false"
-                :addClass="null">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
+                :addClass="null"
+                label="sort by">
+                    <option value="1">latest</option>
+                    <option value="2">Open this</option>
+                    <option value="3">Open this</option>
+                    <option value="4">Open this</option>
+                    <option value="5">Open this</option>
             </x-input.select-float>
         </li>
     </ul>

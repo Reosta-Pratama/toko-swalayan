@@ -12,16 +12,18 @@ class SelectFloat extends Component
     public $name;
     public $required;
     public $addClass;
+    public $label;
     /**
      * Create a new component instance.
      */
-    public function __construct($id, $name, $required=false, $addClass=null)
+    public function __construct($id, $name, $required=false, $addClass=null, $label)
     {
         //
         $this->id = $id;
         $this->name = $name;
         $this->required = $required;
         $this->addClass = $addClass;
+        $this->label = $label;
     }
 
     /**
