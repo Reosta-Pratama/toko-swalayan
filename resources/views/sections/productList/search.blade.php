@@ -32,7 +32,7 @@
                     <option value="2">Open this</option>
                     <option value="3">Open this</option>
                     <option value="4">Open this</option>
-                    <option value="5">Open this</option>
+                    <option value="5">Open this sort by</option>
             </x-input.select-float>
         </li>
     </ul>

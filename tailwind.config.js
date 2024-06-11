@@ -8,6 +8,7 @@ export default {
             colors: {
                 'blackPOS-1': '#1d2630',
                 'blackPOS-2': '#131920',
+                'blackPOS-3': '#262626',
                 'bluePOS-1': '#4680ff',
                 'bluePOS-2': '#3c6dd9',
                 'bluePOS-3': '#3866cc',
@@ -22,7 +23,7 @@ export default {
                 'iconPOS': '#3e4853',
             },
             fontFamily: {
-                'interPOS': ['Inter var', 'sans-serif']
+                'interPOS': ['Inter', 'sans-serif']
             },
             transitionProperty: {
                 'width': 'width',
