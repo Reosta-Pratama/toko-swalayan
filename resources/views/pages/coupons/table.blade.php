@@ -9,15 +9,19 @@
             addClass="text-left"
         />
         <x-table.th 
-            name="categories"
+            name="date"
             addClass="text-left"
         />
         <x-table.th 
-            name="price"
+            name="customer"
+            addClass="text-left"
+        />
+        <x-table.th 
+            name="total"
             addClass="text-end"
         />
         <x-table.th 
-            name="qty"
+            name="paid"
             addClass="text-end"
         />
         <x-table.th 
@@ -46,22 +50,26 @@
                         </div>
     
                         <div class="flex flex-col gap-1">
-                            <h2 class="font-medium leading-[1.2]">{{ $item['name'] }}</h2>
+                            <h2 class="font-semibold leading-[1.2]">{{ $item['name'] }}</h2>
                             <span class="text-blackPOS-1/75 text-xs">{{ $item['brand'] }}</span>
                         </div>
                     </div>
                 </x-table.td>
 
                 <x-table.td addClass="text-left">
-                    {{ $item['category'] }}
+                    {{ formatTanggal('2023-06-11') }}
+                </x-table.td>
+
+                <x-table.td addClass="text-left">
+                    <h2>{{ $item['category'] }}</h2>
                 </x-table.td>
 
                 <x-table.td addClass="text-end">
                     {{ formatRupiah($item['price']) }}
-                </x-table.td>
+                 </x-table.td>
 
                 <x-table.td addClass="text-end">
-                    {{ $item['qty'] }}
+                    {{ formatRupiah($item['price']) }}
                 </x-table.td>
 
                 <x-table.td>

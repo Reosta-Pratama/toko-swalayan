@@ -5,24 +5,24 @@
             addClass="text-right"
         />
         <x-table.th 
-            name="product detail"
+            name="warehouse"
             addClass="text-left"
         />
         <x-table.th 
-            name="categories"
+            name="product"
             addClass="text-left"
         />
         <x-table.th 
-            name="price"
+            name="created on"
+            addClass="text-left"
+        />
+        <x-table.th 
+            name="person"
+            addClass="text-left"
+        />
+        <x-table.th 
+            name="quantity"
             addClass="text-end"
-        />
-        <x-table.th 
-            name="qty"
-            addClass="text-end"
-        />
-        <x-table.th 
-            name="status"
-            addClass="text-left"
         />
         <x-table.th 
             name="actions"
@@ -35,6 +35,10 @@
             <tr class="group">
                 <x-table.td addClass="text-end">
                     {{ $loop->index+1 }}
+                </x-table.td>
+
+                <x-table.td addClass="text-left">
+                    <h2 class="font-semibold leading-[1.2]">{{ $item['category'] }}</h2>
                 </x-table.td>
 
                 <x-table.td addClass="text-left">
@@ -53,19 +57,25 @@
                 </x-table.td>
 
                 <x-table.td addClass="text-left">
-                    {{ $item['category'] }}
+                    {{ formatTanggal('2023-06-11') }}
+                </x-table.td>
+
+                <x-table.td addClass="text-left">
+                    <div class="flex items-center gap-2">
+                        <div class="w-10 h-10">
+                            <img src="{{ asset('assets/img/dummy/avatar-1.jpg') }}" 
+                                alt=""
+                                class="w-full h-full object-contain rounded-md">
+                        </div>
+    
+                        <div>
+                            <h2 class="font-medium leading-[1.2]">{{ $item['category'] }}</h2>
+                        </div>
+                    </div>
                 </x-table.td>
 
                 <x-table.td addClass="text-end">
-                    {{ formatRupiah($item['price']) }}
-                </x-table.td>
-
-                <x-table.td addClass="text-end">
-                    {{ $item['qty'] }}
-                </x-table.td>
-
-                <x-table.td>
-                    <x-table.status status="{{ $item['status'] }}"></x-table.status>
+                    {{ $item['qty']}}
                 </x-table.td>
 
                 {{-- Actions --}}

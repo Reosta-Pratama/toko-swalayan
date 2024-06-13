@@ -48,7 +48,7 @@
                     <div class="w-10 h-10">
                         <img src="{{ asset('assets/img/dummy/avatar-1.jpg') }}" 
                             alt=""
-                            class="w-full h-full object-contain">
+                            class="w-full h-full object-contain rounded-md">
                     </div>
                 </x-table.td>
 

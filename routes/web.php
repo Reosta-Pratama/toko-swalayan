@@ -42,24 +42,20 @@ Route::get('/print-qr', function () {
 
 // Manage Stock ------------------------------------------------------------------------------
 Route::get('/list-stock', function () {
-    return view('pages.dashboard');
+    return view('pages.manageStock.index');
 })->name("stock.list");
 
-Route::get('/adjustment-stock', function () {
-    return view('pages.dashboard');
-})->name("stock.adjustment");
-
 Route::get('/transfer-stock', function () {
-    return view('pages.dashboard');
+    return view('pages.stockTransfer.index');
 })->name("stock.transfer");
 
 // Sales ------------------------------------------------------------------------------
 Route::get('/list-sales', function () {
-    return view('pages.dashboard');
+    return view('pages.sales.index');
 })->name("sales.list");
 
 Route::get('/return-sales', function () {
-    return view('pages.dashboard');
+    return view('pages.salesReturn.index');
 })->name("sales.return");
 
 Route::get('/pos', function () {
@@ -68,7 +64,7 @@ Route::get('/pos', function () {
 
 // Promo ------------------------------------------------------------------------------
 Route::get('/list-coupon', function () {
-    return view('pages.dashboard');
+    return view('pages.coupons.index');
 })->name("coupon.list");
 
 // Purchase ------------------------------------------------------------------------------

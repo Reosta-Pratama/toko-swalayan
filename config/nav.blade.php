@@ -64,11 +64,6 @@ return [
                 'href' => '/list-stock',
             ],
             [
-                'name' => 'Stock Adjustment',
-                'route' => 'stock.adjustment',
-                'href' => '/adjustment-stock',
-            ],
-            [
                 'name' => 'Stock Transfer',
                 'route' => 'stock.transfer',
                 'href' => '/transfer-stock',
