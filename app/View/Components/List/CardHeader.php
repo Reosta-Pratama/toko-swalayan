@@ -8,12 +8,14 @@ use Illuminate\View\Component;
 
 class CardHeader extends Component
 {
+    public $addClass;
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct($addClass=null)
     {
         //
+        $this->addClass = $addClass;
     }
 
     /**

@@ -10,12 +10,12 @@
         </div>
     
         <ul class="flex items-center gap-2">
-            <li class="">
+            <li>
                 <x-button.icon-btn
                     id="filterBtn"
                     name="filter"
                     href="javascript:void(0)"
-                    :addClass="'bg-bluePOS-1 border-bluePOS-1/20'"
+                    addClass="bg-bluePOS-1 border-bluePOS-1/20"
                     textColor="text-white"
                     :target="false"
                     icon="{{ svg('iconsax-bol-filter') }}">
@@ -98,3 +98,5 @@
         </div>
     </div>
 </div>
+
+<script src="{{ asset('assets/js/filterBox.js') }}"></script>

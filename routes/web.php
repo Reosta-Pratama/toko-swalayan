@@ -2,14 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
-// Main
+// Main ------------------------------------------------------------------------------
 Route::get('/', function () {
     return view('pages.dashboard');
 })->name("dashboard");
 
-// Inventory
+// Inventory ------------------------------------------------------------------------------
 Route::get('/list-product', function () {
-    return view('pages.productList.product-list');
+    return view('pages.product.index');
 })->name("product.list");
 
 Route::get('/add-product', function () {
@@ -17,19 +17,19 @@ Route::get('/add-product', function () {
 })->name("product.add");
 
 Route::get('/expired-product', function () {
-    return view('pages.dashboard');
+    return view('pages.expiredProduct.index');
 })->name("product.expired");
 
 Route::get('/list-category', function () {
-    return view('pages.dashboard');
+    return view('pages.categories.index');
 })->name("category.list");
 
 Route::get('/list-brand', function () {
-    return view('pages.dashboard');
+    return view('pages.brands.index');
 })->name("brand.list");
 
 Route::get('/list-unit', function () {
-    return view('pages.dashboard');
+    return view('pages.units.index');
 })->name("unit.list");
 
 Route::get('/print-barcode', function () {
@@ -40,7 +40,7 @@ Route::get('/print-qr', function () {
     return view('pages.dashboard');
 })->name("qr.print");
 
-// Manage Stock
+// Manage Stock ------------------------------------------------------------------------------
 Route::get('/list-stock', function () {
     return view('pages.dashboard');
 })->name("stock.list");
@@ -53,7 +53,7 @@ Route::get('/transfer-stock', function () {
     return view('pages.dashboard');
 })->name("stock.transfer");
 
-// Sales
+// Sales ------------------------------------------------------------------------------
 Route::get('/list-sales', function () {
     return view('pages.dashboard');
 })->name("sales.list");
@@ -66,12 +66,12 @@ Route::get('/pos', function () {
     return view('pages.dashboard');
 })->name("pos");
 
-// Promo
+// Promo ------------------------------------------------------------------------------
 Route::get('/list-coupon', function () {
     return view('pages.dashboard');
 })->name("coupon.list");
 
-// Purchase
+// Purchase ------------------------------------------------------------------------------
 Route::get('/list-purchases', function () {
     return view('pages.dashboard');
 })->name("purchases.list");
@@ -84,7 +84,7 @@ Route::get('/return-purchases', function () {
     return view('pages.dashboard');
 })->name("purchases.return");
 
-// Expense
+// Expense ------------------------------------------------------------------------------
 Route::get('/list-expense', function () {
     return view('pages.dashboard');
 })->name("expense.list");
@@ -93,7 +93,7 @@ Route::get('/category-expense', function () {
     return view('pages.dashboard');
 })->name("expense.category");
 
-// People
+// People ------------------------------------------------------------------------------
 Route::get('/list-customer', function () {
     return view('pages.dashboard');
 })->name("customer.list");
@@ -106,7 +106,7 @@ Route::get('/list-warehouse', function () {
     return view('pages.dashboard');
 })->name("warehouse.list");
 
-// HRM
+// HRM ------------------------------------------------------------------------------
 Route::get('/list-employee', function () {
     return view('pages.dashboard');
 })->name("employee.list");
@@ -123,7 +123,7 @@ Route::get('/payroll-employee', function () {
     return view('pages.dashboard');
 })->name("employee.payroll");
 
-// Report
+// Report ------------------------------------------------------------------------------
 Route::get('/sales-report', function () {
     return view('pages.dashboard');
 })->name("report.sales");
@@ -160,7 +160,7 @@ Route::get('/profitLoss-report', function () {
     return view('pages.dashboard');
 })->name("report.profitLoss");
 
-// Permission
+// Permission ------------------------------------------------------------------------------
 Route::get('/list-user', function () {
     return view('pages.dashboard');
 })->name("user.list");

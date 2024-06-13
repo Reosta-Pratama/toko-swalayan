@@ -5,20 +5,20 @@
             addClass="text-right"
         />
         <x-table.th 
-            name="product detail"
+            name="brand detail"
             addClass="text-left"
         />
         <x-table.th 
-            name="categories"
+            name="logo"
             addClass="text-left"
         />
         <x-table.th 
-            name="price"
-            addClass="text-end"
+            name="code"
+            addClass="text-left"
         />
         <x-table.th 
-            name="qty"
-            addClass="text-end"
+            name="created on"
+            addClass="text-left"
         />
         <x-table.th 
             name="status"
@@ -45,21 +45,26 @@
                 </x-table.td>
 
                 <x-table.td addClass="text-left">
-                    {{ $item['category'] }}
+                    <div class="w-10 h-10">
+                        <img src="{{ asset('assets/img/dummy/avatar-1.jpg') }}" 
+                            alt=""
+                            class="w-full h-full object-contain">
+                    </div>
                 </x-table.td>
 
-                <x-table.td addClass="text-end">
-                    {{ formatRupiah($item['price']) }}
+                <x-table.td addClass="text-left uppercase">
+                    <span class="uppercase">ct-00{{ $loop->index+1 }}</span>
                 </x-table.td>
 
-                <x-table.td addClass="text-end">
-                    {{ $item['qty'] }}
+                <x-table.td addClass="text-left">
+                    {{ formatTanggal('2023-06-11') }}
                 </x-table.td>
 
                 <x-table.td>
                     <x-table.status status="{{ $item['status'] }}"></x-table.status>
                 </x-table.td>
 
+                {{-- Actions --}}
                 <x-table.td>
                     <ul class="flex justify-around">
                         <li>

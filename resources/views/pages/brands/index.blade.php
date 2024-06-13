@@ -6,7 +6,7 @@
             <x-breadcrumb.breadcrumb
                 :nav1="'home'"
                 :href1="route('dashboard')"
-                :nav2="'list product'"
+                :nav2="'list brand'"
                 :href2="null"
                 :nav3="null"
                 :href3="null"
@@ -15,32 +15,33 @@
             
             {{-- Title --}}
             <x-breadcrumb.title
-                title="Product List"
+                title="List brand"
             />
         </div>
     
         {{-- Card --}}
         <x-list.card>
             {{-- Card Header --}}
-            <x-list.card-header>
+            <x-list.card-header
+                addClass="justify-between">
                 {{-- Add Data --}}
                 <x-button.add-button
                     href="{{ route('product.add') }}"
-                    name="add product"
+                    name="add brand"
                 />
 
                 {{-- Print Data --}}
-                @include('pages.productList.print')
+                @include('pages.brands.print')
             </x-list.card-header>   
 
             {{-- Filtering, Sorting, Searching --}}
             <x-container.form-search
                 action="">
-                @include('pages.productList.search')
+                @include('pages.brands.search')
             </x-container.form-search>
 
             {{-- Table Data --}}
-            @include('pages.productList.table')
+            @include('pages.brands.table')
         </x-list.card>
     </div>
 

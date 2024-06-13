@@ -17,7 +17,7 @@
                 <x-input.input-search
                     id="searchMenu"
                     name="searchMenu"
-                    placeholder="Search..."
+                    placeholder="Search Menu..."
                     addClass="pl-10 pr-3 focus:w-[400px]"
                 />
                 
