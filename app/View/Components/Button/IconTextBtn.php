@@ -1,30 +1,27 @@
 <?php
 
-namespace App\View\Components\Input;
+namespace App\View\Components\Button;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
+use Illuminate\Support\HtmlString;
 
-class Select extends Component
+class IconTextBtn extends Component
 {
-    public $id;
-    public $label;
     public $name;
-    public $top;
-    public $required;
+    public $type;
+    public $icon;
     public $addClass;
     /**
      * Create a new component instance.
      */
-    public function __construct($id, $label=null, $name, $top, $required=false, $addClass=null)
+    public function __construct($name, $type, $icon, $addClass)
     {
         //
-        $this->id = $id;
-        $this->label = $label;
         $this->name = $name;
-        $this->top = $top;
-        $this->required = $required;
+        $this->type = $type;
+        $this->icon = new HtmlString($icon);
         $this->addClass = $addClass;
     }
 
@@ -33,6 +30,6 @@ class Select extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.input.select');
+        return view('components.button.icon-text-btn');
     }
 }

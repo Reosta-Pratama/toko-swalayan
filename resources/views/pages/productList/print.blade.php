@@ -39,7 +39,7 @@
         <x-button.icon-btn
             id="refreshBtn"
             name="refresh"
-            href="/"
+            href="javascript:window.location.href=window.location.href"
             addClass="border-grayPOS-1/20"
             textColor="text-grayPOS-1"
             :target="false"
