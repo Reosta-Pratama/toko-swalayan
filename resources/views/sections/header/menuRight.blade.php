@@ -2,7 +2,7 @@
     <ul class="flex items-center gap-1">
         <li>
             <a href="{{ route('pos') }}"
-                class="group h-11 
+                class="group h-11 bg-white
                     flex justify-center items-center rounded-lg px-6
                     border border-solid border-grayPOS-1/20
                     transition duration-300 ease-linear

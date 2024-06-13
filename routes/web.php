@@ -9,7 +9,7 @@ Route::get('/', function () {
 
 // Inventory
 Route::get('/list-product', function () {
-    return view('pages.product-list');
+    return view('pages.productList.product-list');
 })->name("product.list");
 
 Route::get('/add-product', function () {

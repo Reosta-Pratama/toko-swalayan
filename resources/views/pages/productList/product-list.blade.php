@@ -23,19 +23,20 @@
         <x-list.card>
             {{-- Card Header --}}
             <x-list.card-header>
+                {{-- Add Data --}}
                 <x-button.add-button
                     href="{{ route('product.add') }}"
                     name="add product"
                 />
 
                 {{-- Print Data --}}
-                @include('sections.productList.print')
+                @include('pages.productList.print')
             </x-list.card-header>   
 
             {{-- Filtering, Sorting, Searching --}}
             <x-container.form-search
                 action="">
-                @include('sections.productList.search')
+                @include('pages.productList.search')
             </x-container.form-search>
 
             {{-- Table --}}
@@ -67,7 +68,7 @@
                     />
                     <x-table.th 
                         name="actions"
-                        addClass="text-end"
+                        addClass="text-center"
                     />
                 </thead>
 
@@ -99,6 +100,29 @@
 
                             <x-table.td>
                                 <x-table.status status="{{ $item['status'] }}"></x-table.status>
+                            </x-table.td>
+
+                            <x-table.td>
+                                <ul class="flex justify-around">
+                                    <li>
+                                        <x-table.actions
+                                            icon="{{ svg('iconsax-lin-eye') }}"
+                                            type="detail"
+                                            href=""/>
+                                    </li>
+                                    <li>
+                                        <x-table.actions
+                                            icon="{{ svg('iconsax-lin-edit-2') }}"
+                                            type="edit"
+                                            href=""/>
+                                    </li>
+                                    <li>
+                                        <x-table.actions
+                                            icon="{{ svg('iconsax-lin-trash') }}"
+                                            type="delete"
+                                            href=""/>
+                                    </li>
+                                </ul>
                             </x-table.td>
                         </tr>
                     @endforeach
